@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+      .zomatodeliveryapp {
+    height: 300vh;
+    width: 100%;
+}
+
+
+.a {
+    width: 70px;
+    height: 50px;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-color: white;
+    border: 1px solid gray;
+    font-size: 25px;
+    border-bottom-right-radius: 0px;
+
+}
+.a:hover {
+    background-color: lightgray;
+}
+.header {
+    border-bottom: 1px solid lightgray;
+}
+.headertop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.heading {
+    margin: 0px;
+    font-family: 'Segoe UI';
+    font-style: italic;
+}
+.inputcontainer {
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 5px;
+}
+.input {
+    border: 0px;
+    width: 300px;
+}
+.anchortag {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: gray;
+    font-size: 20px;
+    font-family: 'Okra';
+    text-decoration: none;
+}
+.location {
+    color: gray;
+    font-size: 15px;
+    font-family: 'Helvetica';
+    margin-left: 100px;
+}
+.b {
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+}
+.container1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 30px;
+}
+.container2 {
+    height: 50px;
+    width: 50px;
+    background-color:bisque;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container3 {
+    height: 30px;
+    width: 30px;
+}
+.container4 {
+    color: gray;
+    font-family: 'Cambria';
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.options-container {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    border-bottom: 1px solid lightgray;
+}
+.option {
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.option:hover {
+    background-color: rgb(237, 237, 237);
+}
+.options-name {
+    color: gray;
+    font-size: 18px;
+    font-family: 'Cambria';
+    margin: 0px;
+}
+.main-container {
+    padding: 20px;
+}
+.items-heading {
+    font-family: 'Cambria';
+}
+.food {
+    display: flex;
+    flex-wrap: wrap;
+}
+.food-item {
+    border: 1px solid gray;
+    height: 400px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    margin-right: 25px;
+    box-shadow:5px 5px black;
+}
+.item-image {
+    height: 250px;
+    width: 300px;
+    border-radius: 20px;
+}
+.nandu {
+    width: 300px;
+}
+.nandu2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.food-name {
+    font-family: 'Cambria';
+    font-size: 20px;
+}
+.rating {
+    background-color: green;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-family: 'Cambria';
+    font-weight: bold;
+}
+.price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.food-area {
+    margin: 2px;
+    font-family: 'Cambria';
+    color: gray;
+}
+.food-price {
+    margin: 2px;
+    font-family: 'Cambria';
+    color: gray;
+}
+
+
+
+ 
+
+
+
+</style>
+<body>
+   
+    <div class="zomatodeliveryapp">
+        <button class="a">Help?</button>
+    
+        <div class="header">
+            <div class="headertop">
+                <h1 class="heading">Zomato</h1>
+                <div class="inputcontainer">
+                    <input class="input" placeholder="Search for restaurants" />
+                    <button>Search</button>
+                </div>
+                <div>
+                    <a href="zomatologin.html" class="anchortag">Log in</a>
+                    <a href="zomatosignup.html" class="anchortag">Sign up</a>
+                </div>
+            </div>
+            <div class="header-second">
+                <p class="location">India / Hyderabad</p>
+            </div>
+            <br>
+            <div class="b">
+                <div class="container1">
+                    <div class="container2">
+                        <img class="container3" src="https://b.zmtcdn.com/data/o2_assets/30fa0a844f3ba82073e5f78c65c18b371616149662.png"/>
+                    </div>
+                    <p class="container4">Dining Out</p>
+                </div>
+
+                <div class="container1">
+                    <div class="container2">
+                        <img class="container3" src="https://b.zmtcdn.com/data/o2_assets/c0bb85d3a6347b2ec070a8db694588261616149578.png"/>
+                    </div>
+                    <p class="container4">Delivery</p>
+                </div>
+                <div class="container1">
+                    <div class="container2">
+                        <img class="container3" src="https://b.zmtcdn.com/data/o2_assets/855687dc64a5e06d737dae45b7f6a13b1616149818.png"/>
+                    </div>
+                    <p class="container4">Night Life</p>
+                </div>
+            </div>
+        </div>
+        <div class="body-container">
+
+            <div class="options-container">
+                <button class="option">
+                    <p class="options-name">Filters</p>
+                </button>
+                <button class="option">
+                    <p class="options-name">Rating: 4.0+</p>
+                </button>
+                <button class="option">
+                    <p class="options-name">Outdoor Seating</p>
+                </button>
+                <button class="option">
+                    <p class="options-name">Open Now</p>
+                </button>
+            </div>
+            <div class="main-container">
+                <h2 class="items-heading">Best Food In Hyderabad:-</h2>
+                <div class="food">
+                    <div class="food-item">
+                        <img class="item-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOs3EUOQGrgd5dd--bckASb58a6_JwqyQsVQ&usqp=CAU " />
+                        <div class="nandu">
+                            <div class="nandu2">
+                                <h2 class="food-name">Chicken Dum Biryani</h2>
+                                <p class="rating">4.0</p>
+                            </div>
+                            <div class="price">
+                                <p class="food-area">South Indian</p>
+                                <p class="food-price">Rs 250/-</p>
+                            </div>
+                            <p class="food-area">banjarahills, Hyderabad</p>
+                        </div>
+                    </div>
+                    <div class="food-item">
+                        <img class="item-image" src="https://i.ytimg.com/vi/TYZSTlKqQw8/maxresdefault.jpg
+                        "/>
+                        <div class="nandu">
+                            <div class="nandu2">
+                                <h2 class="food-name">Chicken Fry Piece Biryani</h2>
+                                <p class="rating">4.1</p>
+                            </div>
+                            <div class="price">
+                                <p class="food-area">South Indian</p>
+                                <p class="food-price">Rs 280/-</p>
+                            </div>
+                            <p class="food-area">Madhapur, Hyderabad</p>
+                        </div>
+                    </div>
+                    <div class="food-item">
+                        <img class="item-image" src="https://www.vegrecipesofindia.com/wp-content/uploads/2021/04/biryani-recipe-2-500x500.jpg" />
+                        <div class="nandu">
+                            <div class="nandu2">
+                                <h2 class="food-name">Veg Biryani</h2>
+                                <p class="rating">3.9</p>
+                            </div>
+                            <div class="price">
+                                <p class="food-area">South Indian</p>
+                                <p class="food-price">Rs 300/-</p>
+                            </div>
+                            <p class="food-area">kphb, Hyderabad</p>
+                        </div>
+                    </div>
+                    <div class="food-item">
+                        <img class="item-image" src="	https://www.awesomecuisine.com/wp-content/uploads/2017/07/Hyderabadi-Mutton-Biryani.jpg
+                        " />
+                        <div class="nandu">
+                            <div class="nandu2">
+                                <h2 class="food-name">Mutton Biryani</h2>
+                                <p class="rating">4.3</p>
+                            </div>
+                            <div class="price">
+                                <p class="food-area">South Indian</p>
+                                <p class="food-price">Rs 450/-</p>
+                            </div>
+                            <p class="food-area">Madhapur, Hyderabad</p>
+                        </div>
+                    </div>
+                    <div class="food-item">
+                        <img class="item-image" src="https://vismaifood.com/storage/app/uploads/public/e12/7b7/127/thumb__700_0_0_0_auto.jpg" />
+                        <div class="nandu">
+                            <div class="nandu2">
+                                <h2 class="food-name">Chicken Dum Biryani</h2>
+                                <p class="rating">4.1</p>
+                            </div>
+                            <div class="price">
+                                <p class="food-area">South Indian</p>
+                                <p class="food-price">Rs 250/-</p>
+                            </div>
+                            <p class="food-area">hitechcity, Hyderabad</p>
+                        </div>
+                    </div>
+                    <div class="food-item">
+                        <img class="item-image" src="	https://www.cookwithnabeela.com/wp-content/uploads/2024/02/MuttonBiryani.webp" />
+                        <div class="nandu">
+                            <div class="nandu2">
+                                <h2 class="food-name">Mutton Biryani</h2>
+                                <p class="rating">4.0</p>
+                            </div>
+                            <div class="price">
+                                <p class="food-area">South Indian</p>
+                                <p class="food-price">Rs 200/-</p>
+                            </div>
+                            <p class="food-area">kukatpally, Hyderabad</p>
+                        </div>
+                    
+                </div>
+                <div class="food-item">
+                    <img class="item-image" src="https://vismaifood.com/storage/app/uploads/public/e12/7b7/127/thumb__700_0_0_0_auto.jpg" />
+                    <div class="nandu">
+                        <div class="nandu2">
+                            <h2 class="food-name">Chicken Dum Biryani</h2>
+                            <p class="rating">4.1</p>
+                        </div>
+                        <div class="price">
+                            <p class="food-area">South Indian</p>
+                            <p class="food-price">Rs 250/-</p>
+                        </div>
+                        <p class="food-area">hitechcity, Hyderabad</p>
+                    </div>
+                </div>
+                
+               
+                <div class="food-item">
+                    <img class="item-image" src="data:image/jpeg;base64,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" />
+                    <div class="nandu">
+                        <div class="nandu2">
+                            <h2 class="food-name">mutton biryani</h2>
+                            <p class="rating">4.1</p>
+                        </div>
+                        <div class="price">
+                            <p class="food-area">South Indian</p>
+                            <p class="food-price">Rs 200/-</p>
+                        </div>
+                        <p class="food-area">madhapur, Hyderabad</p>
+                    </div>
+                </div>
+
+                <div class="food-item">
+                    <img class="item-image" src="https://www.shutterstock.com/image-photo/chicken-fried-leg-piece-biriyani-600nw-1780734254.jpg" />
+                    <div class="nandu">
+                        <div class="nandu2">
+                            <h2 class="food-name">Chicken fry biryani</h2>
+                            <p class="rating">4.1</p>
+                        </div>
+                        <div class="price">
+                            <p class="food-area">South Indian</p>
+                            <p class="food-price">Rs 150/-</p>
+                        </div>
+                        <p class="food-area">kukatpally, Hyderabad</p>
+                    </div>
+                </div>
+                
+
+
+        
+       
+
+</body>
+</head>
+
+</div>
+</html>
